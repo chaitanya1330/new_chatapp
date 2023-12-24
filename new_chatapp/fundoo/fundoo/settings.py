@@ -104,13 +104,15 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'chatapp_db',
+    #'USER': 'chay',
+        'USER' : os.environ.get('DATABASE_USER'),
+        'PASSWORD' : os.environ.get('DATABASE_PASSWORD'),
+     #'PASSWORD': 'chay@1234',
         'HOST': 'custom-con',
-        # 'database_host' = os.environ.get('DATABASE_HOST', 'custom-con'),
-        'database_user' = os.environ.get('DATABASE_USER'),
-        'database_password' = os.environ.get('DATABASE_PASSWORD'),
         'PORT': '3306',
     }
 }
+
 #sagar kadam
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators

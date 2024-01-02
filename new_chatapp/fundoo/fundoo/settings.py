@@ -106,12 +106,12 @@ DATABASES = {
         'NAME': 'chatapp_db',
         'USER' : os.environ.get('DATABASE_USER'),
         'PASSWORD' : os.environ.get('DATABASE_PASSWORD'),
-        'HOST' : os.environ.get('DATABASE_HOST'),
-        'PORT' : os.environ.get('DATABASE_PORT'),
+        # 'HOST' : os.environ.get('DATABASE_HOST'),
+        # 'PORT' : os.environ.get('DATABASE_PORT'),
         #'USER': 'chay',
         #'PASSWORD': 'chay@1234',
-        # 'HOST': 'custom-con', 
-        # 'PORT': '3306',
+        'HOST': 'custom-con', 
+        'PORT': '3306',
     }
 }
 

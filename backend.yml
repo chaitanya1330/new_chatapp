@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: REPLACE_ME
+          image: 350515911022.dkr.ecr.us-east-2.amazonaws.com/new_chatapp:v1
 
 ---
 apiVersion: v1
